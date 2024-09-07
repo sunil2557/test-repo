@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Machine Repositories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .repo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .repo-list li {
+            margin: 10px 0;
+        }
+        .repo-list a {
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World, This is a Test Machine</h1>
+    <p>Here is my repository:</p>
+    <ul class="repo-list">
+        <?php
+            // One repository
+            $repos = [
+                'My Project' => 'https://github.com/sunil2557/test-repo.git'
+            ];
+
+            // Display the repository link
+            foreach ($repos as $name => $link) {
+                echo "<li><a href=\"$link\" target=\"_blank\">$name</a></li>";
+            }
+        ?>
+    </ul>
+</body>
+</html>
